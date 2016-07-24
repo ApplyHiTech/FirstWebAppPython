@@ -9,6 +9,9 @@ def index(request):
 def test(request):
 	return HttpResponse('This is a Test!')
 
+def about(request):
+	return render(request, 'app/about.html')
+
 def profile(request):
 	parsedData = []
 	if request.method == 'POST': #The POST is the method
